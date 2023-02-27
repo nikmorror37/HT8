@@ -8,6 +8,16 @@ namespace HomeTask8
 {
     internal class Program
     {
+        public enum Day
+        {
+            Monday = 1,
+            Tuesday = 2,
+            Wednesday = 3,
+            Thursday = 4,
+            Friday = 5,
+            Saturday = 6,
+            Sunday = 7,
+        }
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
@@ -90,8 +100,26 @@ namespace HomeTask8
             //accountant1.JobTitle();
 
 
+            //3 ЗАДАНИЕ Вывод списка дней недели через enum
+
+            //Day dayOfWeek;
+            //for (dayOfWeek = Day.Monday; dayOfWeek <= Day.Sunday; dayOfWeek++)
+            //    Console.WriteLine($"{dayOfWeek} - {(int)dayOfWeek} day of week");
+
+            //ЛИБО
+            //for (int i = (int)Day.Monday; i <= (int)Day.Sunday; i++)
+            //    Console.WriteLine($"{(Day)i} - {i} day of week");
 
 
+            //4 ЗАДАНИЕ Создать структуру UserInfo, которая включает в себя Name Age Adress Surname Login Password. Вывести поля структуры в консоль.
+
+            //UserInfo user1 = new UserInfo();
+
+            //UserInfo user2 = user1 with { name = "Игнат", surname = "Маккарти", login = "IgnatDobryak2000", password = "CocaCola203040@", };
+
+            //user1.Print();
+            //user2.Print();
+            //Console.WriteLine(user2.age);
 
         }
     }
